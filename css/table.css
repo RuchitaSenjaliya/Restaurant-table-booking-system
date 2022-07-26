@@ -1,0 +1,327 @@
+.body {
+    background-color: #282A34;
+    color: #fff;
+    overflow: hidden;
+}
+
+.dining-area {
+    position: relative;
+    /* border: 2px solid white; */
+}
+
+.dining-area .table {
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.dining-area .table4 {
+    position: absolute;
+    width: 160px;
+    height: 100px;
+    background-color: skyblue;
+}
+
+.dining-area .table4::after {
+    content: "_ _ _ _";
+    position: absolute;
+    z-index: 11;
+    font-size: 92px;
+    line-height: 104px;
+    top: -103px;
+    left: 22px;
+    word-spacing: 14px;
+}
+
+.dining-area .table4 h5 {
+    text-align: center;
+    color: #fff;
+    padding-top: 38px;
+}
+
+.dining-area .table4.t1 {
+    top: 50px;
+    left: -150px;
+}
+
+.hide {
+    display: none;
+    position: relative;
+    top: 157px;
+    left: 5px;
+}
+
+.t1:hover+.hide {
+    display: block;
+    color: white;
+}
+
+.dining-area .table4.t2 {
+    top: 220px;
+    left: -150px;
+}
+
+.dining-area .table4.t3 {
+    top: 390px;
+    left: -150px;
+}
+
+.dining-area .table4.t10 {
+    left: 620px;
+    top: 50px;
+}
+
+.dining-area .table4.t11 {
+    left: 620px;
+    top: 220px;
+}
+
+.dining-area .table4.t12 {
+    left: 620px;
+    top: 390px;
+}
+
+
+/* //////////////////////////////////////////////////////////////////// */
+
+.dining-area .table6 h5 {
+    text-align: center;
+    padding-top: 80px;
+    color: #fff;
+}
+
+.dining-area .table6 {
+    position: absolute;
+    width: 120px;
+    height: 200px;
+    background-color: #a9f0d2;
+}
+
+.dining-area .table6::after {
+    content: "_ _ _";
+    position: absolute;
+    z-index: 11;
+    font-size: 88px;
+    top: 33px;
+    left: -40px;
+    transform: rotate(90deg);
+    width: max-content;
+    word-spacing: 5px;
+}
+
+.dining-area .table6::before {
+    content: "_ _ _";
+    position: absolute;
+    z-index: 11;
+    font-size: 88px;
+    top: 33px;
+    left: 86px;
+    transform: rotate(90deg);
+    width: max-content;
+    word-spacing: 5px;
+}
+
+.dining-area .table6.t4 {
+    top: 50px;
+    left: 150px;
+}
+
+.dining-area .table6.t5 {
+    top: 280px;
+    left: 150px;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* .dining-area .table4.t4 {
+    top: 250px;
+    left: 170px;
+} */
+
+.dining-area .table2 h5 {
+    text-align: center;
+    padding-top: 25px;
+    color: #fff;
+}
+
+.dining-area .table2 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: #eca0d1;
+}
+
+.dining-area .table2::after {
+    content: "_ _";
+    position: absolute;
+    z-index: 11;
+    font-size: 88px;
+    line-height: 84px;
+    top: -91px;
+    left: 23px;
+}
+
+.dining-area .table2.t6 {
+    top: 50px;
+    left: 400px;
+}
+
+.dining-area .table2.t7 {
+    top: 175px;
+    left: 400px;
+}
+
+.dining-area .table2.t8 {
+    top: 300px;
+    left: 400px;
+}
+
+.dining-area .table2.t9 {
+    top: 415px;
+    left: 400px;
+}
+
+
+/* /////////////////////////////////////////////////////////////////// */
+
+
+/* /////////////////////////////////////////////////////////////////// */
+
+
+/* free: #2ad976 */
+
+
+/* occupied: #ea7474bf */
+
+
+/* bill: #4b7be5 */
+
+.dining-area .free-table {
+    background-color: #2ad97680;
+}
+
+.dining-area .free-table::after,
+.dining-area .free-table::before {
+    color: #03f26b;
+}
+
+.dining-area .occupied-table {
+    background-color: #ea747482;
+}
+
+.dining-area .occupied-table::after,
+.dining-area .occupied-table::before {
+    color: #eab9c0;
+}
+
+.dining-area .bill-table {
+    background-color: #4b7be550;
+}
+
+.dining-area .bill-table::after,
+.dining-area .bill-table::before {
+    color: #4b7be5;
+}
+
+
+/* //////////////////////////////////////////////////////////////////////// */
+
+.notation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 560px;
+    margin-left: -515px;
+}
+
+.free p,
+.occup p,
+.bill p {
+    padding: 0 15px;
+    font-size: 20px;
+}
+
+.free p {
+    color: #2ad976;
+}
+
+.free p::before {
+    content: "  •  ";
+    font-size: 120%;
+    color: #2ad976;
+}
+
+.occup p {
+    color: #ea7474bf;
+}
+
+.occup p::before {
+    content: "  •  ";
+    font-size: 120%;
+    color: #ea7474bf;
+}
+
+.bill p {
+    color: #4b7be5;
+}
+
+.bill p::before {
+    content: "  •  ";
+    font-size: 120%;
+    color: #4b7be5;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////// */
+
+.part {
+    width: 5px;
+    height: 90vh;
+    background-color: #fff;
+    position: relative;
+    left: 1098px;
+    top: -45px;
+}
+
+.part p {
+    width: 250px;
+    text-align: center;
+    position: relative;
+    top: 250px;
+    left: 100px;
+    font-size: 23px;
+}
+
+.part form {
+    width: 400px;
+    position: relative;
+    left: 25px;
+    top: -80px;
+}
+
+.form-control {
+    background-color: transparent;
+    color: #fff;
+}
+
+form h4 {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.submit-btn {
+    text-align: center;
+}
+
+.submit-btn .btn {
+    color: #fff;
+    background-color: #4b7be5;
+    border-color: #4b7be5;
+}
+
+.visible {
+    visibility: hidden !important;
+    /* visibility: visible; */
+}
